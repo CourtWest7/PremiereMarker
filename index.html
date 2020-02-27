@@ -8,13 +8,109 @@
 		<meta charset="utf-8">
 		<title>Marker Management</title>
 		<script src="./lib/CSInterface.js"></script>
-			<script src="./lib/Vulcan.js"></script>
+		<script src="./lib/Vulcan.js"></script>
 		<link rel="stylesheet" href="./style/style.css">
 	</head>
 
 	<body>
-
-		<button id="runButton" type="run">CHANGE TEXT HERE!!</button>
+		<div class="header section">
+			<div class="preferences header__column">
+				<p>Preferences</p>
+			</div>
+			<div class="fixUser header__column">
+				<p>Fix Frame IO User</p>
+			</div>
+			<div class="status header__column">
+				<p>Status</p>
+			</div>
+		</div>
+		<div class="markerData section">
+			<div class="markerData__column">
+				<p class="category">Copy/Cut Single Marker</p>
+				<p class="category">Paste Marker</p>			
+			</div>
+			<div class="markerData__column">
+				<p class="category">Store Markers</p>
+				<p class="category">Revert Markers</p>			
+			</div>
+		</div>
+		<div class="options section">
+			<h1 class="title">Choose One</h1>
+			<div class="option__group">
+				<p id="markerColors" class="option option--active category">Marker Colors</p>
+				<p id="addWords" class="option option--inactive category">Add Words</p>
+				<p id="exportImport" class="option option--inactive category">Export/Import</p>
+				<p id="findAndReplace" class="option option--inactive category">Find and Replace</p>
+				<p id="deleteMarkers" class="option option--inactive category">Delete Colors</p>
+			</div>
+		</div>
+		<div class = "panel__MarkerColors panel--active section">
+			<div class="panel_MarkerColors__csv">
+				<p>Use Marker Color CSV (optional)</p>
+			</div>
+			<div>
+				<button id="changeMarkerColorButton" type="run" class="runButton">Change Marker Colors</button>
+			</div>
+			<div class="panel__table">
+				<div class="tableKeywords">
+					<p class="table__header"><span id="markerColor__keyword" class="table--active">Keywords</span>/<span id="markerColor__color" class="table--inactive">Color</span></p>
+					<p class="table__header table_color">Color</p>
+					<div class="addField">
+						<img id="add_C" class="addC" src="./assets/images/add.png" alt="subtract">
+					</div>
+				</div>
+				<div class="field">
+					<div class="keyword__wrapper field__header">
+						<input type="text" id="key_1" class="keyword" name="keyCol_1" placeholder="#GFX">
+					</div>
+					<div class="dropdownColor__wrapper field__header">
+						<select id="color_1" class="dropdownColor">
+							<option value="green">Green</option>
+							<option value="red">Red</option>
+							<option value="purple">Purple</option>
+							<option value="orange">Orange</option>
+							<option value="yellow">Yellow</option>
+							<option value="white">White</option>
+							<option value="blue">Blue</option>
+							<option value="cyan">Cyan</option>
+						</select>
+					</div>
+					<div class="xOut field__header">
+						<img id="minus_1" class="minus" src="./assets/images/minus.png" alt="subtract">
+					</div>
+				</div>
+				<div class="field">
+					<div class="dropdownColor__wrapper__choice field__header ">
+						<select id="color_1" class="dropdownColor">
+							<option value="green">Green</option>
+							<option value="red">Red</option>
+							<option value="purple">Purple</option>
+							<option value="orange">Orange</option>
+							<option value="yellow">Yellow</option>
+							<option value="white">White</option>
+							<option value="blue">Blue</option>
+							<option value="cyan">Cyan</option>
+						</select>
+					</div>
+					<div class="dropdownColor__wrapper field__header">
+						<select id="color_1" class="dropdownColor">
+							<option value="green">Green</option>
+							<option value="red">Red</option>
+							<option value="purple">Purple</option>
+							<option value="orange">Orange</option>
+							<option value="yellow">Yellow</option>
+							<option value="white">White</option>
+							<option value="blue">Blue</option>
+							<option value="cyan">Cyan</option>
+						</select>
+					</div>
+					<div class="xOut field__header">
+						<img id="minus_2" class="minus" src="./assets/images/minus.png" alt="subtract">
+					</div>
+				</div>
+			</div>
+		</div>
+		
 
 	<script type="text/javascript" src="./lib/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="./lib/script.js"></script>

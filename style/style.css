@@ -2,9 +2,158 @@ body {
   background-color: #262626;
   color: #f5f5f5;
   text-align: center;
+  font-size: 2.5vw;
   }
-input {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-    }
+
+.section{
+  margin-bottom: 2%;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}    
+
+.header__column{
+  min-width: 20%;
+}
+
+.status{
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 2vw;
+}
+
+.preferences{
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 2vw;
+}
+
+.fixUser{
+  text-align: center;
+  flex-grow: 1;
+}
+.category{
+  display: inline;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.markerData{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.markerData__column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  flex-grow: 1;
+}
+
+.option__group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.title{
+  font-size: 3.3vw;
+  margin-bottom: 2%;
+}
+
+.runButton{
+  font-size: 2vw;
+}
+.panel__table{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 50%;
+  max-width: 60%;
+}
+
+.tableKeywords{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.field{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.table__header{
+  flex-grow: 1;
+  max-width: 50%;
+  margin-bottom: 1%;
+}
+
+.field__header{
+  flex-grow: 1;
+  max-width: 50%;
+  margin-bottom: 1%;
+}
+
+select{
+  font-size: 2vw;
+}
+
+.keyword{
+  max-width: 70%;
+  min-width: 20%;
+}
+input{
+  font-size: 2vw;
+}
+
+.add_IMG{
+  width: 0px;
+  height: 0px;
+  padding: 10px 10px;
+  background: url('../assets/images/Icons_Sm.png') -10px -10px; 
+ 
+}
+
+.addField{
+  margin-top: 5%;
+  align-self: center;
+}
+
+.dropdownColor__wrapper__choice{
+  width: 50%;
+}
+
+.addC{
+  width: 4.5vw;
+  height: 4.5vw;
+}
+
+.minus{
+  position: relative;
+  left: 28%;
+  width: 4.5vw;
+  height: 4.5vw;
+}
+
+
+
+
+
