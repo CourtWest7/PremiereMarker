@@ -5,6 +5,13 @@ body {
   font-size: 2.5vw;
   }
 
+  p{
+    color: white;
+  }
+
+  h1{
+    color: white;
+  }
 .section{
   margin-bottom: 2%;
 }
@@ -23,6 +30,11 @@ body {
   text-align: right;
   flex-grow: 1;
   padding-right: 2vw;
+  transform: translateY(-20%);
+}
+
+#status{
+  color: grey;
 }
 
 .preferences{
@@ -56,6 +68,10 @@ body {
   flex-grow: 1;
 }
 
+.copyPaste{
+  margin-left: -20px;
+}
+
 .option__group{
   display: flex;
   flex-direction: row;
@@ -73,8 +89,81 @@ body {
   margin-bottom: 2%;
 }
 
+/**************************************************************************************
+
+NOW We are going into the different status
+
+*/
+
+.option--active{
+  color:#17e25a;
+  font-weight: bold;
+}
+
+.option--inactive{
+  color: gray;
+}
+
+.table--active{
+  color: #17e25a;
+}
+
+.table--inactive{
+  color: gray;
+}
+
+/**************************************************************************************
+
+NOW We are going into the different states
+
+*/
+
+.option:hover{
+  color: lightblue;
+  cursor: pointer;
+}
+
+.keyword__selector:hover{
+  color: lightblue;
+  cursor: pointer; 
+}
+
+.labelIcon:hover{
+  color: lightblue;
+  cursor: pointer; 
+}
+
+#folderSelection:hover{
+  background-color: lightblue;
+  cursor: pointer; 
+}
+
+.box--inactive:hover{
+  background-color: lightblue;
+  cursor: pointer; 
+}
+
+#checkSelection:hover{
+  background-color: grey;
+  cursor: pointer; 
+}
+
+.minus:hover{
+  cursor: pointer; 
+  background-color: rgba(235, 8, 8, .5);
+}
+
+.addC:hover{
+  cursor: pointer; 
+  background-color: rgba(8, 235, 46, .5);
+}
+/**************************************************************************************
+
+NOW We are going into the different panels
+
+*/
 .runButton{
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .panel__table{
   position: absolute;
@@ -84,6 +173,44 @@ body {
   transform: translateX(-50%);
   min-width: 50%;
   max-width: 60%;
+}
+
+.panel_MarkerColors__csv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#folderSelection{
+  width: 5vw;
+  height: 5vw;
+  margin-right: 5px;
+}
+
+#mCSV{
+  transform: translateY(-25%);
+}
+
+#checkSelection{
+  width: 5vw;
+  height: 5vw;
+  transform: translateY(-20%);
+}
+
+#xSelection{
+  margin-left: 10px;
+  transform: translateY(2px);
+  width: 5vw;
+  height: 5vw;
+}
+
+.box{
+  width: 4vw;
+  height: 4vw;
+  background-color: rgba(10,10,10,.5);
+  border: medium;
+  margin-left: 1.5vw;
+  transform: translateY(30%);
 }
 
 .tableKeywords{
@@ -153,7 +280,24 @@ input{
   height: 4.5vw;
 }
 
+.icon{
+  display: inline;
+  width: 5vw;
+}
+
+.labelIcon{
+  display: inline;
+  position: absolute;
+  transform: translateY(-50%);
+}
 
 
 
+#copySelection{
+  width: 3.5vw;
+  height: 4.5vw;
+}
 
+#pasteText{
+  transform: translateY(10%);
+}
