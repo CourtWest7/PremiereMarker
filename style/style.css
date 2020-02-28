@@ -46,7 +46,14 @@ body {
 .fixUser{
   text-align: center;
   flex-grow: 1;
+  transform: translateX(-10%);
 }
+
+#passN{
+  transform: translateY(-80%);
+}
+
+
 .category{
   display: inline;
   margin-top: 2%;
@@ -90,7 +97,17 @@ body {
 }
 
 .paste{
-  transform: translateY(15%);
+  display: flex;
+}
+#pasteSelection{
+  width: 6vw;
+  height: 7vw;
+}
+
+#pasteText{
+  position: relative;
+  left: 1vw;
+  top: 1vw;
 }
 
 button{
@@ -117,6 +134,19 @@ NOW We are going into the different status
 
 .table--inactive{
   color: gray;
+}
+
+.panel--inactive{
+  display: none;
+}
+
+.inactive{
+  display: none;
+}
+
+.option--white{
+  color:white;
+  font-weight: bold;
 }
 
 /**************************************************************************************
@@ -220,6 +250,10 @@ NOW We are going into the different panels
   border: medium;
   margin-left: 1.5vw;
   transform: translateY(30%);
+}
+
+.box:hover{
+  cursor: pointer;
 }
 
 .tableKeywords{
