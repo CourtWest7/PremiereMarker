@@ -89,6 +89,13 @@ body {
   margin-bottom: 2%;
 }
 
+.paste{
+  transform: translateY(15%);
+}
+
+button{
+  cursor: pointer;
+}
 /**************************************************************************************
 
 NOW We are going into the different status
@@ -157,6 +164,8 @@ NOW We are going into the different states
   cursor: pointer; 
   background-color: rgba(8, 235, 46, .5);
 }
+
+
 /**************************************************************************************
 
 NOW We are going into the different panels
@@ -293,11 +302,16 @@ input{
 
 
 
+
 #copySelection{
   width: 3.5vw;
   height: 4.5vw;
 }
 
 #pasteText{
+  transform: translateY(10%);
+}
+
+#CutTxt{
   transform: translateY(10%);
 }

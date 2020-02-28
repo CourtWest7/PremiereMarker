@@ -16,11 +16,11 @@
 		<div class="header section">
 			<div class="preferences header__column">
 				<img id="prefSelection" class="icon" src="./assets/images/person.png" alt="person">
-				<p class="labelIcon">Preferences</p>
+				<p id = "prefTxt" class="labelIcon">Preferences</p>
 			</div>
 			<div class="fixUser header__column">
 				<img id="fixSelection" class="icon" src="./assets/images/fix.png" alt="fix icon">
-				<p class="labelIcon">Fix Frame IO User</p>
+				<p id="fixTxt" class="labelIcon">Fix Frame IO User</p>
 			</div>
 			<div class="status header__column">
 				<p id="status">Status</p>
@@ -28,23 +28,29 @@
 		</div>
 		<div class="markerData section">
 			<div class="markerData__column copyPaste">
-				<div>
-				<img id="copySelection" class="icon" src="./assets/images/copy.png" alt="copy icon">
-				<p class="category labelIcon">Copy/Cut Single Marker</p>
-				</div>
-				<div>
-				<img id="pasteSelection" class="icon" src="./assets/images/paste.png" alt="paste icon">
-				<p id="pasteText" class="category labelIcon">Paste Marker</p>
+				<div class="column">
+					<div class="copy">
+					<img id="copySelection" class="icon" src="./assets/images/copy.png" alt="copy icon">
+					<p class="category labelIcon" id="copyCutTxt">Copy Marker</p>
+					</div>	
+					<div class="cut">
+					<img id="cutSelection" class="icon" src="./assets/images/cut.png" alt="copy icon">
+					<p class="category labelIcon" id="cutTxt">Cut Marker</p>
+					</div>
 				</div>
 			</div>
+				<div class="paste">
+					<img id="pasteSelection" class="icon" src="./assets/images/paste.png" alt="paste icon">
+					<p id="pasteText" class="category labelIcon">Paste Marker</p>
+				</div>
 			<div class="markerData__column">
 				<div>
 				<img id="saveSelection" class="icon" src="./assets/images/save.png" alt="save icon">
-				<p class="category labelIcon">Store Markers</p>
+				<p class="category labelIcon" id="saveTxt">Store Markers</p>
 				</div>
 				<div>
 				<img id="revertSelection" class="icon" src="./assets/images/revert.png" alt="revert icon">
-				<p class="category labelIcon">Revert Markers</p>	
+				<p class="category labelIcon" id="revertTxt">Revert Markers</p>	
 				</div>
 			</div>
 		</div>
@@ -62,7 +68,7 @@
 			<div class="panel_MarkerColors__csv">
 				<img id="folderSelection" class="icon" src="./assets/images/folder.png" alt="folder icon">
 				<p id="mCSV" class="option--inactive">Use Marker Color CSV (optional)</p>
-				<div class="box ">
+				<div class="box" id="csvBox">
 				<img id="checkSelection" class="icon" src="./assets/images/check.png" alt="check icon">
 				</div>
 			</div>
